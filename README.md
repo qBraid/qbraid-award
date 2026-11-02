@@ -8,7 +8,7 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 |---|---|
 | **Who can enter** | Every team, in every track |
 | **What you submit** | 2 or 3 slides on how you used qBraid, plus optional extras (screen recording, qBraid link, repo, job IDs) |
-| **Where** | The entry form for your event ([below](#your-event)) |
+| **Where** | Devpost at the Intermountain Quantum Competition, or the entry form at the TN Quantum Hackathon ([below](#your-event)) |
 | **Prize** | $200 in gift cards split across the winning team, plus 1,000 qBraid credits for each member |
 | **Judged on** | Creative, Real, Clear ([details](#how-we-judge)) |
 
@@ -20,8 +20,10 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 
 | Event | Dates | Entries due | Entry form | Discord |
 |---|---|---|---|---|
-| Intermountain Quantum Competition | Nov 6 to 7, 2026 | With your final submission ([Alex to confirm: deadline]) | [Alex to add: form link] | [Join](https://discord.gg/7mWPs3HGc) |
+| Intermountain Quantum Competition (BYU, Provo) | Nov 6 to 7, 2026 | **Sat Nov 7, 3:00pm MST**, with your Devpost submission | [Devpost](https://iqc.devpost.com): select the qBraid Award prize when you submit [Alex to confirm with Will] | [Join](https://discord.gg/7mWPs3HGc) |
 | TN Quantum Hackathon, Chattanooga | Nov 13 to 15, 2026 | **Sunday 9:00am**, with your final submission | [Alex to add: form link] | [Alex to add: Discord link] |
+
+**Intermountain Quantum Competition:** put your 2 or 3 qBraid slides in your Devpost submission, either in the image gallery or as a link in your project description. The winner is announced with the other prizes on Nov 7 at 5:00pm MST.
 
 **TN Quantum Hackathon:** the winner is announced at the closing ceremony at The Landing Social House. If you want to run on Quantinuum through qBraid, each team member first creates a Quantinuum Nexus account and accepts its terms, which takes under a minute. Everyone who completes the weekend also gets a qBraid completion certificate with a verification link.
 
@@ -31,7 +33,7 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 
 1. **Use qBraid in your project.** You don't need to change what you're building. Use qBraid where it helps.
 2. **Make 2 or 3 slides** following [the template below](#the-slides). Put them in Google Slides, PowerPoint or a PDF, and make sure anyone with the link can view them.
-3. **Fill in the entry form** for your event before the deadline. It asks for your team name, the link to your slides, any extras, and the qBraid account email of one team member, so we can find your runs and send the prize. It takes about three minutes, and you can edit your entry until the deadline.
+3. **Submit before the deadline.** At the Intermountain Quantum Competition, select the qBraid Award prize in your Devpost submission. At the TN Quantum Hackathon, fill in the entry form. Either way, include the link to your slides, any extras, and the qBraid account email of one team member, so we can find your runs and send the prize. It takes about three minutes, and you can edit your entry until the deadline.
 
 ---
 
