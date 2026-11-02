@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" font-family="Inter, system-ui, -apple-system, sans-serif">
+  <title>QBER with and without an eavesdropper on three backends (illustrative numbers)</title>
+  <rect width="640" height="400" fill="#ffffff"/>
+
+  <!-- legend -->
+  <rect x="70" y="8" width="14" height="14" rx="3" fill="#C9B8F5"/>
+  <text x="90" y="20" font-size="14" fill="#1A1530">No eavesdropper</text>
+  <rect x="230" y="8" width="14" height="14" rx="3" fill="#5B2BD1"/>
+  <text x="250" y="20" font-size="14" fill="#1A1530">Eavesdropper</text>
+  <line x1="372" y1="15" x2="400" y2="15" stroke="#E0457B" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="408" y="20" font-size="14" fill="#1A1530">Alarm at 11%</text>
+
+  <!-- grid (10 px per percentage point, 0% at y=340) -->
+  <g stroke="#E7E3F3" stroke-width="1">
+    <line x1="70" y1="340" x2="620" y2="340" stroke="#C9C3DD"/>
+    <line x1="70" y1="240" x2="620" y2="240"/>
+    <line x1="70" y1="140" x2="620" y2="140"/>
+    <line x1="70" y1="40" x2="620" y2="40"/>
+  </g>
+  <g font-size="13" fill="#6B6680" text-anchor="end">
+    <text x="60" y="344">0%</text>
+    <text x="60" y="244">10%</text>
+    <text x="60" y="144">20%</text>
+    <text x="60" y="44">30%</text>
+  </g>
+
+  <!-- bars -->
+  <rect x="98" y="338" width="60" height="2" fill="#C9B8F5"/>
+  <rect x="166" y="89" width="60" height="251" rx="4" fill="#5B2BD1"/>
+  <rect x="281" y="298" width="60" height="42" rx="4" fill="#C9B8F5"/>
+  <rect x="349" y="72" width="60" height="268" rx="4" fill="#5B2BD1"/>
+  <rect x="464" y="321" width="60" height="19" rx="4" fill="#C9B8F5"/>
+  <rect x="532" y="83" width="60" height="257" rx="4" fill="#5B2BD1"/>
+
+  <!-- value labels -->
+  <g font-size="14" font-weight="600" fill="#1A1530" text-anchor="middle">
+    <text x="128" y="330">0.0%</text>
+    <text x="196" y="81">25.1%</text>
+    <text x="311" y="290">4.2%</text>
+    <text x="379" y="64">26.8%</text>
+    <text x="494" y="313">1.9%</text>
+    <text x="562" y="75">25.7%</text>
+  </g>
+
+  <!-- alarm threshold -->
+  <line x1="70" y1="230" x2="620" y2="230" stroke="#E0457B" stroke-width="2" stroke-dasharray="7 6"/>
+
+  <!-- axis labels -->
+  <g font-size="14" fill="#1A1530" text-anchor="middle">
+    <text x="162" y="366">qBraid GPU sim</text>
+    <text x="345" y="366">IQM Garnet</text>
+    <text x="528" y="366">IonQ Forte 1</text>
+  </g>
+  <text x="620" y="392" font-size="12" fill="#6B6680" text-anchor="end">Illustrative numbers. Error rate = share of key bits that disagree.</text>
+</svg>

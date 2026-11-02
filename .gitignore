@@ -1,0 +1,5 @@
+# Internal planning for qBraid staff (runbooks, call briefs, scoresheets).
+# This repo is meant to go public; never commit this folder.
+internal/
+
+.DS_Store
