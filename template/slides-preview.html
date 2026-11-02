@@ -67,6 +67,11 @@
   .launch i { width: 18px; height: 18px; border-radius: 4px; background: linear-gradient(135deg, #7C4DFF, #E0457B); display: inline-block; }
   .mono { font-family: 'JetBrains Mono', monospace; font-size: 16px; }
 
+  /* ?only=N renders one slide alone, for scripts/render-slides.sh */
+  html.only body { background: #fff; }
+  html.only .intro, html.only .note { display: none; }
+  html.only .wrap { margin: 0; padding: 0; overflow: visible; }
+  html.only .slide { border-radius: 0; box-shadow: none; }
   @page { size: 1280px 720px; margin: 0; }
   @media print {
     body { background: #fff; }
@@ -179,5 +184,12 @@
   <div class="note"><b>Optional, but it makes Real easy to check.</b> This is where extras go: job IDs, a screen recording, a qBraid link or artifact, a launch button. Showing the cost and how it was kept low is a plus. Spending more never adds points.</div>
 </div>
 
+<script>
+  const only = new URLSearchParams(location.search).get('only');
+  if (only) {
+    document.documentElement.classList.add('only');
+    document.querySelectorAll('.wrap').forEach((w, i) => { if (String(i + 1) !== only) w.remove(); });
+  }
+</script>
 </body>
 </html>
