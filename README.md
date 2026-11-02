@@ -2,17 +2,17 @@
 
 # qBraid Award: Most Creative Use of qBraid
 
-The qBraid Award goes to the team that makes the most creative use of [qBraid](https://account.qbraid.com) at your hackathon. It's not a separate challenge: any team in any track can win it with the project you're already building. To enter, you send us a **3 to 5 minute video** showing what you did on qBraid.
+The qBraid Award goes to the team that makes the most creative use of [qBraid](https://account.qbraid.com) at your hackathon. It's not a separate challenge: any team in any track can win it with the project you're already building. To enter, you send us **2 or 3 slides** and a **3 to 5 minute video** that walks through them with qBraid running on screen.
 
 | | |
 |---|---|
 | **Who can enter** | Every team, in every track |
-| **What you submit** | One 3 to 5 minute video: a screen recording of your project running on qBraid |
-| **Where** | The entry form for your event ([below](#your-event)): team name, video link, one team member's qBraid email |
+| **What you submit** | 2 or 3 slides from [our template](./template/qbraid-award-template.pptx), plus a 3 to 5 minute video walking through them with qBraid running on screen |
+| **Where** | The entry form for your event ([below](#your-event)): team name, slides link, video link, one team member's qBraid email |
 | **Prize** | $200 in gift cards split across the winning team, plus 1,000 qBraid credits for each member |
 | **Judged on** | Did it run on qBraid, and how creatively did you use it? ([details](#how-we-judge)) |
 
-**Contents:** [Your event](#your-event) · [How to enter](#how-to-enter) · [Ideas](#ideas-for-using-qbraid) · [The video](#the-video) · [Optional slides](#optional-slides) · [Code you can copy](#code-you-can-copy) · [How we judge](#how-we-judge) · [Checklist](#before-you-submit) · [FAQ](#faq) · [Links](#links)
+**Contents:** [Your event](#your-event) · [How to enter](#how-to-enter) · [Ideas](#ideas-for-using-qbraid) · [The slides](#the-slides) · [The video](#the-video) · [Code you can copy](#code-you-can-copy) · [How we judge](#how-we-judge) · [Checklist](#before-you-submit) · [FAQ](#faq) · [Links](#links)
 
 ---
 
@@ -23,7 +23,7 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 | Intermountain Quantum Competition (BYU, Provo) | Nov 6 to 7, 2026 | **Sat Nov 7, 9:00am MST** | [Alex to add: form link] | [Join](https://discord.gg/7mWPs3HGc) |
 | TN Quantum Hackathon, Chattanooga | Nov 13 to 15, 2026 | **Sunday 9:00am**, with your final submission | [Alex to add: form link] | [Alex to add: Discord link] |
 
-**Intermountain Quantum Competition:** the award sits on top of whichever sponsor challenge your team is on. To get free credits and real hardware, join the IQC organization on qBraid with the invite link [Alex to add: org invite link]. qBraid gives a live platform walkthrough on Friday at 11:15am MST. Videos are due Saturday at 9:00am MST, before the 3:00pm presentations, and the winner gets a certificate at the 5:00pm awards.
+**Intermountain Quantum Competition:** the award sits on top of whichever sponsor challenge your team is on. To get free credits and real hardware, join the IQC organization on qBraid with the invite link [Alex to add: org invite link]. qBraid gives a live platform walkthrough on Friday at 11:15am MST. Slides and videos are due Saturday at 9:00am MST, before the 3:00pm presentations, and the winner gets a certificate at the 5:00pm awards.
 
 **TN Quantum Hackathon:** the winner is announced at the closing ceremony at The Landing Social House. If you want to run on Quantinuum through qBraid, each team member first creates a Quantinuum Nexus account and accepts its terms, which takes under a minute. Everyone who completes the weekend also gets a qBraid completion certificate with a verification link.
 
@@ -32,8 +32,9 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 ## How to enter
 
 1. **Use qBraid in your project.** You don't need to change what you're building. Use qBraid where it helps.
-2. **Record a 3 to 5 minute video** of your project running on qBraid ([what to show](#the-video)).
-3. **Fill in the entry form** for your event before the deadline: your team name, the video link, and the qBraid account email of one team member so we can send the prize. It takes about a minute, and you can edit your entry until the deadline.
+2. **Make 2 or 3 slides** from the [template](./template/qbraid-award-template.pptx) ([details](#the-slides)).
+3. **Record a 3 to 5 minute video** walking through your slides, with qBraid running on screen ([what to show](#the-video)).
+4. **Fill in the entry form** for your event before the deadline: your team name, the slides link, the video link, and the qBraid account email of one team member so we can send the prize. It takes about a minute, and you can edit your entry until the deadline.
 
 ---
 
@@ -52,17 +53,41 @@ Any of these can be the core of a strong entry. One used well beats all of them 
 
 ---
 
+## The slides
+
+2 or 3 slides from our template. They're the outline for your video, so keep them short.
+
+- **Template:** [`qbraid-award-template.pptx`](./template/qbraid-award-template.pptx). It opens in PowerPoint, Keynote or Google Slides (in Google Drive, choose New > File upload, then open it with Google Slides).
+- **Finished example:** [`qbraid-award-example.pptx`](./template/qbraid-award-example.pptx), or [as a PDF](./template/qbraid-award-example.pdf). The team is made up and the numbers are illustrative.
+
+1. **qBraid features we used:** keep a tile for every qBraid feature you used, write a line on how, and delete the rest.
+2. **Our best qBraid moment:** one chart or screenshot, what it shows, and where AI helped.
+3. **Check it (optional):** job IDs, links, and cost.
+
+![Example slide: qBraid features we used](./images/example-1.png)
+
+<details>
+<summary>Example slides 2 and 3</summary>
+
+![Example slide 2: Our best qBraid moment](./images/example-2.png)
+
+![Example slide 3: Check it](./images/example-3.png)
+
+</details>
+
+---
+
 ## The video
 
-A screen recording of 3 to 5 minutes, with someone on your team talking through it. It doesn't need editing or polish: we care that it shows qBraid doing real work.
+A screen recording of 3 to 5 minutes, with someone on your team talking through your slides and then showing the real thing running. It doesn't need editing or polish: we care that it shows qBraid doing real work.
 
 **What to show:**
 
 | Time | Show |
 |---|---|
-| 0:00 to 0:30 | Your team, your challenge, and what you built, in a sentence or two |
+| 0:00 to 0:30 | Your team, your challenge, and what you built (slide 1) |
 | 0:30 to 3:00 | **qBraid doing the work, on screen:** your notebook running in qBraid Lab, a job going to a simulator or quantum hardware, results coming back on the Jobs page. Say which qBraid features you used |
-| 3:00 to 4:30 | Your best result: one chart or comparison (simulator vs. hardware works great), plus **where AI helped** and where you stepped in |
+| 3:00 to 4:30 | Your best result (slide 2): one chart or comparison, plus **where AI helped** and where you stepped in |
 | Last 30 seconds | What you'd try next |
 
 **One rule:** we have to *see* it run on qBraid. Show the job, the device and the results on screen. That's how we check entries, so you don't need to send job IDs.
@@ -72,28 +97,6 @@ A screen recording of 3 to 5 minutes, with someone on your team talking through 
 - On a Mac, press Cmd+Shift+5. On Windows, use the Snipping Tool's record option. [Loom](https://www.loom.com) or a Zoom recording of yourself sharing your screen also works.
 - Upload it as **unlisted on YouTube**, to Loom, or to Google Drive with "anyone with the link can view".
 - Keep it under 5 minutes. Judges stop watching after that.
-
----
-
-## Optional slides
-
-If you want slides in your video, use our template. **Slides are optional**, and the video is what we judge.
-
-- **Template:** [`qbraid-award-template.pptx`](./template/qbraid-award-template.pptx). It opens in PowerPoint, Keynote or Google Slides (in Google Drive, choose New > File upload, then open it with Google Slides).
-- **Finished example:** [`qbraid-award-example.pptx`](./template/qbraid-award-example.pptx), or [as a PDF](./template/qbraid-award-example.pdf). The team is made up and the numbers are illustrative.
-
-The most useful one is the features slide: keep a tile for every qBraid feature you used, and delete the rest.
-
-![Example slide: qBraid features we used](./images/example-1.png)
-
-<details>
-<summary>The other two example slides</summary>
-
-![Example slide 2: Our best qBraid moment](./images/example-2.png)
-
-![Example slide 3: Check it](./images/example-3.png)
-
-</details>
 
 ---
 
@@ -131,7 +134,7 @@ More in the docs: [running on qBraid](https://docs.qbraid.com/sdk/user-guide/pro
 
 ## How we judge
 
-qBraid staff watch every video after the deadline, separately from track judging. For each one:
+qBraid staff watch every video after the deadline, with your slides open alongside, separately from track judging. For each one:
 
 1. **Did it clearly run on qBraid?** If we can't see qBraid doing real work on screen, the entry is out.
 2. **How creatively did you use qBraid?** We score it from 1 to 5. Using several features well, comparing devices, a clever use of AI, or a clear result someone outside quantum can follow all push the score up.
@@ -145,6 +148,7 @@ We re-watch the top two and pick the winner.
 
 ## Before you submit
 
+- [ ] 2 or 3 slides from the template, and the link opens for anyone
 - [ ] Your video is 3 to 5 minutes, and the link opens for anyone
 - [ ] It shows qBraid running on screen: notebook, jobs and results
 - [ ] You say which qBraid features you used, and where AI helped if you used it
@@ -162,7 +166,7 @@ We re-watch the top two and pick the winner.
 
 **Can we use AI?** Yes, please. Tell us in your video what it did and where you stepped in.
 
-**Do we need slides?** No. The video is all we judge. Use the [template](#optional-slides) if slides help you tell the story.
+**Do we need slides?** Yes, 2 or 3 from the [template](#the-slides). Your video can just be you talking through them, then showing qBraid running.
 
 **Can we edit our entry after submitting?** Yes, until the deadline.
 
@@ -175,6 +179,6 @@ We re-watch the top two and pick the winner.
 - [qBraid account](https://account.qbraid.com) and [device catalog](https://account.qbraid.com/devices)
 - [qBraid docs](https://docs.qbraid.com) and [getting started in qBraid Lab](https://docs.qbraid.com/lab/user-guide/getting-started)
 - [qBraid SDK on GitHub](https://github.com/qBraid/qBraid)
-- Optional slides: [template (.pptx)](./template/qbraid-award-template.pptx) · [example (.pptx)](./template/qbraid-award-example.pptx) · [example (PDF)](./template/qbraid-award-example.pdf)
+- Slides: [template (.pptx)](./template/qbraid-award-template.pptx) · [example (.pptx)](./template/qbraid-award-example.pptx) · [example (PDF)](./template/qbraid-award-example.pdf)
 - [qBraid AI](https://docs.qbraid.com/v2/ai/user-guide/overview) (AI Chat, Agent mode, MCP server) and the [qBraid CLI](https://docs.qbraid.com/v2/cli/user-guide/overview)
 - Questions: ask a qBraid mentor at your event or in your event's Discord ([Intermountain](https://discord.gg/7mWPs3HGc)), or email alex@qbraid.com
