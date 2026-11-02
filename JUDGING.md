@@ -4,15 +4,19 @@ This is a light award. Two qBraid staff (one is fine at small events) pick the w
 
 ## Steps
 
-1. **Shortlist from usage.** In the hackathon's qBraid org, list the jobs and compute sessions from the event weekend and group them by team. Shortlist the 3 to 5 teams whose usage looks most interesting: hardware runs, GPU simulators, several devices, or anything unusual. Volume alone doesn't get a team shortlisted.
-2. **Read their presentations.** For each shortlisted team, look at the final presentation they already submitted and score three things from 1 to 5:
+1. **Open every entry.** Each team submits two or three slides through the entry form, sometimes with extras: a screen recording, a qBraid link or artifact, a repo, or job IDs.
+2. **Check it ran.** Using the qBraid email on the entry, look up the team's jobs and sessions from the event weekend in the hackathon's qBraid org.
+3. **Score three things from 1 to 5:**
    - **Creative:** did they use qBraid in a way we didn't expect, or one that fits their problem really well?
    - **Real:** did it run on qBraid during the event, and does it matter to their result?
-   - **Clear:** could someone see from the presentation what qBraid did for them?
-3. **Pick.** The highest total wins. Ties go to Creative.
+   - **Clear:** can you quickly see from their slides what qBraid did for them?
+
+   Extras don't earn points on their own, but they make Real easier to confirm.
+4. **Pick.** The highest total wins. Ties go to Creative.
 
 ## Rules
 
 - Spending doesn't score. More jobs or credits earn nothing by themselves.
 - Track judging is separate. A team's track result doesn't affect this award, and track judges don't score it.
 - If a judge wrote code for a team during the event, that judge doesn't score that team.
+- If an entry's link doesn't open, ask the team to fix it, as long as there's time before judging ends.
