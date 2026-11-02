@@ -7,7 +7,7 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 | | |
 |---|---|
 | **Who can enter** | Every team, in every track |
-| **What you submit** | 2 or 3 slides on how you used qBraid, plus optional extras (screen recording, qBraid link, repo, job IDs) |
+| **What you submit** | 2 or 3 slides from [our template](./template/qbraid-award-template.pptx), plus optional extras (screen recording, qBraid link, repo, job IDs) |
 | **Where** | Devpost at the Intermountain Quantum Competition, or the entry form at the TN Quantum Hackathon ([below](#your-event)) |
 | **Prize** | $200 in gift cards split across the winning team, plus 1,000 qBraid credits for each member |
 | **Judged on** | Creative, Real, Clear ([details](#how-we-judge)) |
@@ -32,7 +32,7 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 ## How to enter
 
 1. **Use qBraid in your project.** You don't need to change what you're building. Use qBraid where it helps.
-2. **Make 2 or 3 slides** following [the template below](#the-slides). Put them in Google Slides, PowerPoint or a PDF, and make sure anyone with the link can view them.
+2. **Make 2 or 3 slides** from the [PowerPoint template](./template/qbraid-award-template.pptx) ([details below](#the-slides)). Share them from Google Slides, PowerPoint or as a PDF, and make sure anyone with the link can view them.
 3. **Submit before the deadline.** At the Intermountain Quantum Competition, select the qBraid Award prize in your Devpost submission. At the TN Quantum Hackathon, fill in the entry form. Either way, include the link to your slides, any extras, and the qBraid account email of one team member, so we can find your runs and send the prize. It takes about three minutes, and you can edit your entry until the deadline.
 
 ---
@@ -42,6 +42,7 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 Any of these can be the core of a strong entry. One used well beats all of them used briefly.
 
 - **Run on real quantum hardware.** Send your circuit to a QPU and compare the result with a simulator. Prices and live status for every device are in the [device catalog](https://account.qbraid.com/devices).
+- **Use AI on qBraid (encouraged).** Ask [AI Chat](https://docs.qbraid.com/v2/ai/user-guide/overview) in your qBraid account to compare devices or explain a result, run a coding agent with Agent mode, or connect your own AI tool (Claude, Cursor, VS Code) to qBraid through the MCP server at `https://mcp.qbraid.com/mcp`. Show what you had it do and where you stepped in.
 - **Push past your laptop with GPU simulators.** qBraid's GPU state-vector simulator handles circuits up to 35 qubits.
 - **Compare devices.** Run the same circuit on two different kinds of hardware, superconducting and trapped-ion for example, and explain the difference.
 - **Write once, run anywhere.** Write in Qiskit, Cirq, Braket or OpenQASM and run on a device that expects another format. The [qBraid transpiler](https://docs.qbraid.com/sdk/user-guide/transpiler) handles the conversion.
@@ -53,37 +54,40 @@ Any of these can be the core of a strong entry. One used well beats all of them 
 
 ## The slides
 
-Two slides are required and the third is optional. Below is a full example for a made-up team, so the numbers are illustrative. All three slides are also in [this PDF](./template/example-slides.pdf).
+**Download the template:** [`qbraid-award-template.pptx`](./template/qbraid-award-template.pptx). It opens in PowerPoint, Keynote or Google Slides (in Google Drive, choose New > File upload, then open the file with Google Slides). Fill in the brackets, delete what you don't need, and share a link anyone can view.
 
-### Slide 1: What qBraid did for us (required)
+**See a finished example:** [`qbraid-award-example.pptx`](./template/qbraid-award-example.pptx), or [as a PDF](./template/qbraid-award-example.pdf). The team is made up and the numbers are illustrative.
 
-![Example slide 1: What qBraid did for us](./images/slide-1-what-qbraid-did.png)
+Two slides are required and the third is optional.
 
-Include:
+### Slide 1: qBraid features we used (required)
 
-- your project in one sentence
-- where each step ran, as a simple left-to-right diagram, naming the actual devices, simulators and tools
-- one sentence on what qBraid made possible that you couldn't have done on a laptop alone
+![Example slide 1: qBraid features we used](./images/example-1.png)
+
+- Start with your project in one sentence.
+- The template has a tile for each qBraid feature: quantum hardware, simulators, qBraid Lab, **qBraid AI**, the transpiler, jobs and results, the CLI and compute, and one for your own idea. **Keep a tile for every feature you used**, write a line on how you used it, and delete the rest.
+- AI is encouraged. Say what you had it do and where you stepped in.
 
 ### Slide 2: Our best qBraid moment (required)
 
-![Example slide 2: Our best qBraid moment](./images/slide-2-best-moment.png)
+![Example slide 2: Our best qBraid moment](./images/example-2.png)
 
-Include:
-
-- **one** chart or screenshot of the result you're proudest of. Comparisons work best: simulator against hardware, one device against another, small circuits against large ones.
-- a takeaway in a sentence or two that someone outside quantum can follow
+- **One** chart or screenshot of the result you're proudest of. Comparisons work best: simulator against hardware, one device against another, small circuits against large ones. A `plot_histogram` screenshot is perfect ([code below](#code-you-can-copy)).
+- **What it shows:** a sentence or two someone outside quantum can follow.
+- **Where AI helped:** what you asked an AI tool to do, and what you fixed or checked yourself.
+- **What surprised us:** optional.
 
 ### Slide 3: Check it (optional)
 
-![Example slide 3: Check it](./images/slide-3-check-it.png)
+![Example slide 3: Check it](./images/example-3.png)
 
-Include whichever of these you have:
+- **Proof:** your job IDs, from the [Jobs page in your qBraid account](https://docs.qbraid.com/v2/account/quantum-jobs) or `print(job.id)` in your notebook.
+- **Links:** a screen recording, a qBraid notebook, project, job or artifact, or your repo.
+- **Cost and next:** roughly what it cost in credits, how you kept it low, and what you'd try next.
 
-- your qBraid job IDs, from the [Jobs page in your qBraid account](https://docs.qbraid.com/v2/account/quantum-jobs) or `print(job.id)` in your notebook
-- a link to a screen recording, a qBraid notebook, project or artifact, or your repo
-- roughly what it cost in credits, and how you kept the cost low
-- what you'd try next
+This is what the blank template looks like:
+
+![Blank template, slide 1](./images/template-1.png)
 
 ---
 
@@ -144,6 +148,7 @@ qBraid staff judge the award after the deadline, separately from track judging. 
 | **Clear** | From your slides alone, we can quickly see what qBraid did for you |
 
 - **Spending more credits doesn't help.** A careful, cheap hardware run beats an expensive one.
+- **Using AI is encouraged.** Smart use of AI counts toward Creative, as long as you show where you checked its work.
 - Extras don't earn points by themselves, but they make "Real" easy for us to confirm.
 - The highest total wins, and ties go to Creative.
 
@@ -152,8 +157,8 @@ qBraid staff judge the award after the deadline, separately from track judging. 
 ## Before you submit
 
 - [ ] 2 or 3 slides, and the link opens for anyone
-- [ ] Slide 1 names the actual devices, simulators and tools you used
-- [ ] Slide 2 has one clear chart or screenshot and a plain-English takeaway
+- [ ] Slide 1 keeps a tile for each qBraid feature you used, with the devices and tools named
+- [ ] Slide 2 has one clear chart or screenshot, a plain-English takeaway, and where AI helped (if you used it)
 - [ ] Job IDs or another link we can check (optional, but it helps)
 - [ ] The entry form is filled in, with one team member's qBraid email, before the deadline
 
@@ -167,6 +172,8 @@ qBraid staff judge the award after the deadline, separately from track judging. 
 
 **We only used simulators. Can we still win?** Yes. Hardware isn't required, and a creative use of the simulators counts.
 
+**Can we use AI?** Yes, please. Tell us on slide 2 what it did and where you stepped in.
+
 **Can we edit our entry after submitting?** Yes, until the deadline.
 
 **How do we get the prize if we win?** We announce the winner at the event and email the team through the qBraid email on your entry.
@@ -178,5 +185,6 @@ qBraid staff judge the award after the deadline, separately from track judging. 
 - [qBraid account](https://account.qbraid.com) and [device catalog](https://account.qbraid.com/devices)
 - [qBraid docs](https://docs.qbraid.com) and [getting started in qBraid Lab](https://docs.qbraid.com/lab/user-guide/getting-started)
 - [qBraid SDK on GitHub](https://github.com/qBraid/qBraid)
-- Example slides: [PDF](./template/example-slides.pdf) · [images](./images)
+- Slides: [template (.pptx)](./template/qbraid-award-template.pptx) · [example (.pptx)](./template/qbraid-award-example.pptx) · [example (PDF)](./template/qbraid-award-example.pdf)
+- [qBraid AI](https://docs.qbraid.com/v2/ai/user-guide/overview) (AI Chat, Agent mode, MCP server) and the [qBraid CLI](https://docs.qbraid.com/v2/cli/user-guide/overview)
 - Questions: ask a qBraid mentor at your event or in your event's Discord ([Intermountain](https://discord.gg/7mWPs3HGc)), or email alex@qbraid.com
