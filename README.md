@@ -18,10 +18,10 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 
 ## Your event
 
-| Event | Dates | Entries due | Entry form |
-|---|---|---|---|
-| Intermountain Quantum Competition | Nov 6 to 7, 2026 | With your final submission ([Alex to confirm: deadline]) | [Alex to add: form link] |
-| TN Quantum Hackathon, Chattanooga | Nov 13 to 15, 2026 | **Sunday 9:00am**, with your final submission | [Alex to add: form link] |
+| Event | Dates | Entries due | Entry form | Discord |
+|---|---|---|---|---|
+| Intermountain Quantum Competition | Nov 6 to 7, 2026 | With your final submission ([Alex to confirm: deadline]) | [Alex to add: form link] | [Join](https://discord.gg/7mWPs3HGc) |
+| TN Quantum Hackathon, Chattanooga | Nov 13 to 15, 2026 | **Sunday 9:00am**, with your final submission | [Alex to add: form link] | [Alex to add: Discord link] |
 
 **TN Quantum Hackathon:** the winner is announced at the closing ceremony at The Landing Social House. If you want to run on Quantinuum through qBraid, each team member first creates a Quantinuum Nexus account and accepts its terms, which takes under a minute. Everyone who completes the weekend also gets a qBraid completion certificate with a verification link.
 
@@ -177,4 +177,4 @@ qBraid staff judge the award after the deadline, separately from track judging. 
 - [qBraid docs](https://docs.qbraid.com) and [getting started in qBraid Lab](https://docs.qbraid.com/lab/user-guide/getting-started)
 - [qBraid SDK on GitHub](https://github.com/qBraid/qBraid)
 - Example slides: [PDF](./template/example-slides.pdf) · [images](./images)
-- Questions: ask a qBraid mentor at your event, or email alex@qbraid.com
+- Questions: ask a qBraid mentor at your event or in your event's Discord ([Intermountain](https://discord.gg/7mWPs3HGc)), or email alex@qbraid.com
