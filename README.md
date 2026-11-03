@@ -12,7 +12,7 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 | **Prize** | $200 in gift cards split across the winning team, plus 1,000 qBraid credits for each member |
 | **Judged on** | Did it run on qBraid, and how creatively did you use it? ([details](#how-we-judge)) |
 
-**Contents:** [Your event](#your-event) · [How to enter](#how-to-enter) · [Ideas](#ideas-for-using-qbraid) · [The slides](#the-slides) · [The video](#the-video) · [Code you can copy](#code-you-can-copy) · [How we judge](#how-we-judge) · [Checklist](#before-you-submit) · [FAQ](#faq) · [Links](#links)
+**Contents:** [Your event](#your-event) · [How to enter](#how-to-enter) · [Make it visual](#make-it-visual-in-one-line) · [Ideas](#ideas-for-using-qbraid) · [The slides](#the-slides) · [The video](#the-video) · [Code you can copy](#code-you-can-copy) · [How we judge](#how-we-judge) · [Checklist](#before-you-submit) · [FAQ](#faq) · [Links](#links)
 
 ---
 
@@ -31,10 +31,44 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 
 ## How to enter
 
-1. **Use qBraid in your project.** You don't need to change what you're building. Use qBraid where it helps.
-2. **Make 2 or 3 slides** from the [template](./template/qbraid-award-template.pptx) ([details](#the-slides)).
-3. **Record a 3 to 5 minute video** walking through your slides, with qBraid running on screen ([what to show](#the-video)).
-4. **Fill in the entry form** for your event before the deadline: your team name, the slides link, the video link, and the qBraid account email of one team member so we can send the prize. It takes about a minute, and you can edit your entry until the deadline.
+Entering takes about 30 minutes, in four steps:
+
+1. **Use qBraid in your project.** You probably already are: if your notebook runs in qBraid Lab and sends a job to a qBraid device or simulator, you qualify. Want to stand out? [Make it visual](#make-it-visual-in-one-line). It takes about 5 minutes.
+2. **Fill in the slides (10 minutes).** Download the [template](./template/qbraid-award-template.pptx). It opens in PowerPoint, Keynote or Google Slides. For Google Slides, upload it to Drive, then open it with Google Slides. Every slide tells you what to write, and the speaker notes tell you what to say in your video ([details](#the-slides)).
+3. **Record your screen (10 minutes).** Walk through your slides, then show qBraid running ([what to show](#the-video)).
+4. **Fill in the entry form (2 minutes).** Use the form for your event ([above](#your-event)). It asks for:
+   - your team name
+   - the slides link
+   - the video link
+   - one team member's qBraid email, so we can send the prize
+
+   Set both links to "anyone with the link can view". You can edit your entry until the deadline.
+
+---
+
+## Make it visual in one line
+
+Judges love a visual, and this gets you one fast.
+
+1. Put [`make_visual.py`](./template/make_visual.py) next to your notebook.
+2. Run this once you have results:
+
+   ```python
+   from make_visual import make_visual
+
+   make_visual({"Simulator": sim_counts, "Hardware": hw_counts}, title="Our results")   # or just one counts dict
+   ```
+
+   That writes `visual.html`, an animated bar chart in a single file.
+3. Open it next to your notebook in qBraid Lab's Agent Canvas panel. From a Lab terminal in the same folder, run:
+
+   ```bash
+   qbraid-canvas visual.html --title "Our results"
+   ```
+
+4. Make it yours: ask your AI assistant to restyle it, add controls, animate your algorithm step by step, or turn it into a game.
+
+For inspiration, see [Quantum Runner](https://account.qbraid.com/explore/projects/q-ready-quantum-runner-2gkzz6) on qBraid's Explore page. It's a side-scroller where a real quantum measurement decides where the gaps go.
 
 ---
 
@@ -44,7 +78,7 @@ Any of these can be the core of a strong entry. One used well beats all of them 
 
 - **Make it visual (we'd love to see this).** Turn your results into something people can see and play with: an interactive view, an animation of your algorithm converging, a live dashboard, even a game.
   - **For inspiration:** [Quantum Runner](https://account.qbraid.com/explore/projects/q-ready-quantum-runner-2gkzz6) on qBraid's Explore page is a side-scroller where a real quantum measurement decides where the gaps go.
-  - **How:** build yours as one self-contained HTML file, then open it next to your notebook in qBraid Lab's Agent Canvas panel with `qbraid-canvas your-file.html --title "Our project"`. AI assistants are great at building these.
+  - **How:** start from [the one-liner above](#make-it-visual-in-one-line), or build your own self-contained HTML file and open it with `qbraid-canvas`. AI assistants are great at building these.
 - **Share it on Explore.** Put your project in a GitHub repo and submit it from qBraid's Explore page, so anyone can launch it in qBraid Lab with one click.
 - **Run on real quantum hardware.** Send your circuit to a QPU and compare the result with a simulator. Prices and live status for every device are in the [device catalog](https://account.qbraid.com/devices).
 - **Use AI on qBraid (encouraged).** Ask [AI Chat](https://docs.qbraid.com/v2/ai/user-guide/overview) in your qBraid account to compare devices or explain a result, run a coding agent with Agent mode, or connect your own AI tool (Claude, Cursor, VS Code) to qBraid through the MCP server at `https://mcp.qbraid.com/mcp`. Show what you had it do and where you stepped in.

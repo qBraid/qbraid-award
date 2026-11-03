@@ -41,7 +41,7 @@ const FEATURES = [
   { key: "tr", name: "Transpiler", hint: "Qiskit, Cirq, Braket, OpenQASM", icon: fa.FaShuffle },
   { key: "jobs", name: "Jobs and results", hint: "Jobs page, job IDs, plots", icon: fa.FaChartColumn },
   { key: "cli", name: "CLI and compute", hint: "qbraid CLI, GPU instances", icon: fa.FaTerminal },
-  { key: "other", name: "Something else", hint: "Your own idea", icon: fa.FaLightbulb },
+  { key: "other", name: "Visuals and Explore", hint: "Agent Canvas, games, Explore", icon: fa.FaLightbulb },
 ];
 
 async function buildDeck(mode) {
@@ -125,7 +125,7 @@ async function buildDeck(mode) {
   });
   s.addNotes(ex
     ? "Example. The team kept the six tiles for features they really used and deleted the other two."
-    : "Fill in a tile for every qBraid feature you used, and delete the tiles you didn't use. Drag the rest so the grid has no gaps. qBraid AI is encouraged: say what you asked it to do and where you stepped in.");
+    : "Fill in a tile for every qBraid feature you used, and delete the tiles you didn't use. Drag the rest so the grid has no gaps. Used something that isn't listed? Rename any tile. qBraid AI is encouraged: say what you asked it to do and where you stepped in.\n\nIn your video (first 30 seconds): say your team name, your track and what you built in one sentence, then name the qBraid features on this slide.");
 
   // ---------- Slide 2: Our best qBraid moment ----------
   s = pres.addSlide({ masterName: "QB_CONTENT", sectionTitle: "Required" });
@@ -143,8 +143,8 @@ async function buildDeck(mode) {
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: vx, y: vy, w: vw, h: vh, rectRadius: 0.12, fill: { color: HEX.lt2 }, line: { color: HEX.accent3, width: 1.5, dashType: "dash" }, objectName: "Visual placeholder" });
     s.addImage({ data: smallIcons.image, x: vx + vw / 2 - 0.45, y: vy + 1.35, w: 0.9, h: 0.9, objectName: "Visual placeholder icon", altText: "Image placeholder" });
     s.addText([
-      { text: "Paste your chart or screenshot here", options: { bold: true, fontSize: 18, color: C.text1, breakLine: true } },
-      { text: "Simulator vs. hardware, or one device vs. another, works great", options: { fontSize: 14, color: C.accent6 } },
+      { text: "Paste one visual here", options: { bold: true, fontSize: 18, color: C.text1, breakLine: true } },
+      { text: "A chart, a screenshot of your interactive view, or a frame from your game", options: { fontSize: 14, color: C.accent6 } },
     ], { x: vx + 0.5, y: vy + 2.45, w: vw - 1, h: 1.0, align: "center", valign: "top", margin: 0, isTextBox: true, objectName: "Visual placeholder text" });
   }
 
@@ -162,7 +162,7 @@ async function buildDeck(mode) {
   });
   s.addNotes(ex
     ? "Example. One chart, a plain-English takeaway, and an honest note on where AI helped and where the team stepped in."
-    : "Replace the placeholder with one chart or screenshot. Keep 'What it shows' to a sentence or two. 'Where AI helped' is encouraged; 'What surprised us' is optional.");
+    : "Replace the placeholder with ONE visual: a chart, a screenshot of your interactive view or Agent Canvas page, or a frame from your game. Keep 'What it shows' to a sentence or two. 'Where AI helped' is encouraged; 'What surprised us' is optional.\n\nIn your video (about 3:00 to 4:30): show this visual live if you can, then explain it in plain words.");
 
   // ---------- Slide 3: Check it (optional) ----------
   pres.addSection({ title: "Optional" });
@@ -175,7 +175,7 @@ async function buildDeck(mode) {
       : ["[Job IDs: from the Jobs page in your qBraid account, or print(job.id)]", "[Devices and simulators you used]"] },
     { k: "links", label: "Links", lines: ex
       ? ["Screen recording (1:45): <link>", "qBraid notebook: <link>", "Repo with a Launch on qBraid button: <link>"]
-      : ["[Screen recording, 2 minutes max]", "[qBraid notebook, project, job or artifact]", "[Repo with a Launch on qBraid button]"] },
+      : ["[Your 3 to 5 minute video]", "[qBraid notebook, project, job or artifact]", "[Repo with a Launch on qBraid button]"] },
     { k: "cost", label: "Cost and next", lines: ex
       ? ["About 1,100 credits (about $11), 4% of our budget", "Batched every key bit into one circuit per run: 4 hardware jobs in total", "Next: run the alarm on Quantinuum"]
       : ["[Credits used, roughly]", "[How you kept the cost low]", "[What you'd try next]"] },
@@ -193,7 +193,7 @@ async function buildDeck(mode) {
   s.addText("Spending more credits doesn't score. A careful, cheap run beats an expensive one.", { x: 0.6, y: 5.55, w: 12.13, h: 0.35, fontSize: 12, italic: true, color: C.accent6, margin: 0, isTextBox: true, objectName: "Cost note" });
   s.addNotes(ex
     ? "Example. This slide is optional, but it makes it easy for judges to confirm the work ran on qBraid."
-    : "Optional. Anything here helps judges confirm your work ran on qBraid. Make sure every link opens for anyone.");
+    : "Optional. Anything here helps judges confirm your work ran on qBraid. Make sure every link opens for anyone.\n\nIn your video (last 30 seconds): say what you'd try next.");
 
   const file = path.join(OUT, ex ? "qbraid-award-example.pptx" : "qbraid-award-template.pptx");
   await pres.writeFile({ fileName: file });
