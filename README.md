@@ -8,7 +8,7 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 |---|---|
 | **Who can enter** | Every team, in every track |
 | **What you submit** | 2 or 3 slides from [our template](./template/qbraid-award-template.pptx), plus a 3 to 5 minute video walking through them with qBraid running on screen |
-| **Where** | The entry form for your event ([below](#your-event)): team name, slides link, video link, one team member's qBraid email |
+| **Where** | The entry form for your event ([below](#your-event)): team name, slides link, video link, and the email on your qBraid account |
 | **Prize** | $200 in gift cards split across the winning team, plus 1,000 qBraid credits for each member |
 | **Judged on** | Did it run on qBraid, and how creatively did you use it? ([details](#how-we-judge)) |
 
@@ -40,7 +40,7 @@ Entering takes about 30 minutes, in four steps:
    - your team name
    - the slides link
    - the video link
-   - one team member's qBraid email, so we can send the prize
+   - your email: use the one on your qBraid account, so the prize reaches you. The form emails you a copy of your entry, with a link to edit it
 
    Set both links to "anyone with the link can view". You can edit your entry until the deadline.
 
@@ -190,7 +190,7 @@ We re-watch the top two and pick the winner.
 - [ ] Your video is 3 to 5 minutes, and the link opens for anyone
 - [ ] It shows qBraid running on screen: notebook, jobs and results
 - [ ] You say which qBraid features you used, and where AI helped if you used it
-- [ ] The entry form is filled in, with one team member's qBraid email, before the deadline
+- [ ] The entry form is filled in, using the email on your qBraid account, before the deadline
 
 ---
 
@@ -208,7 +208,7 @@ We re-watch the top two and pick the winner.
 
 **Can we edit our entry after submitting?** Yes, until the deadline.
 
-**How do we get the prize if we win?** We announce the winner at the event and email the team through the qBraid email on your entry.
+**How do we get the prize if we win?** We announce the winner at the event and email the address on your entry, which should be the one on your qBraid account.
 
 ---
 
