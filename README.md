@@ -12,6 +12,8 @@ The qBraid Award goes to the team that makes the most creative use of [qBraid](h
 | **Prize** | $200 in gift cards split across the winning team, plus 1,000 qBraid credits for each member |
 | **Judged on** | Did it run on qBraid, and how creatively did you use it? ([details](#how-we-judge)) |
 
+> **Use your credits.** They're there to be used, not to sit in your wallet. Run on real hardware, launch a GPU, try qBraid AI, and explore everything in the [qBraid docs](https://docs.qbraid.com). The one rule: every run should do something for your project. Benchmarking a device just to fill a table doesn't count.
+
 **Contents:** [Your event](#your-event) · [How to enter](#how-to-enter) · [Make it visual](#make-it-visual-in-one-line) · [Ideas](#ideas-for-using-qbraid) · [The slides](#the-slides) · [The video](#the-video) · [Code you can copy](#code-you-can-copy) · [How we judge](#how-we-judge) · [Checklist](#before-you-submit) · [FAQ](#faq) · [Links](#links)
 
 ---
@@ -74,20 +76,31 @@ For inspiration, see [Quantum Runner](https://account.qbraid.com/explore/project
 
 ## Ideas for using qBraid
 
-Any of these can be the core of a strong entry. One used well beats all of them used briefly.
+Your credits are there to be used, so try things. Pick the features that move your project forward, and say in your video why you used each one.
 
 - **Make it visual (we'd love to see this).** Turn your results into something people can see and play with: an interactive view, an animation of your algorithm converging, a live dashboard, even a game.
   - **For inspiration:** [Quantum Runner](https://account.qbraid.com/explore/projects/q-ready-quantum-runner-2gkzz6) on qBraid's Explore page is a side-scroller where a real quantum measurement decides where the gaps go.
   - **How:** start from [the one-liner above](#make-it-visual-in-one-line), or build your own self-contained HTML file and open it with `qbraid-canvas`. AI assistants are great at building these.
-- **Share it on Explore.** Put your project in a GitHub repo and submit it from qBraid's Explore page, so anyone can launch it in qBraid Lab with one click.
-- **Run on real quantum hardware.** Send your circuit to a QPU and compare the result with a simulator. Prices and live status for every device are in the [device catalog](https://account.qbraid.com/devices).
-- **Use AI on qBraid (encouraged).** Ask [AI Chat](https://docs.qbraid.com/v2/ai/user-guide/overview) in your qBraid account to compare devices or explain a result, run a coding agent with Agent mode, or connect your own AI tool (Claude, Cursor, VS Code) to qBraid through the MCP server at `https://mcp.qbraid.com/mcp`. Show what you had it do and where you stepped in.
-- **Push past your laptop with GPU simulators.** qBraid's GPU state-vector simulator handles circuits up to 35 qubits.
-- **Compare devices.** Run the same circuit on two different kinds of hardware, superconducting and trapped-ion for example, and explain the difference.
-- **Write once, run anywhere.** Write in Qiskit, Cirq, Braket or OpenQASM and run on a device that expects another format. The [qBraid transpiler](https://docs.qbraid.com/sdk/user-guide/transpiler) handles the conversion.
-- **Make it reproducible.** Put your work in a repo with a Launch on qBraid button so anyone can open it in [qBraid Lab](https://docs.qbraid.com/lab/user-guide/getting-started) in one click.
+- **Run on real hardware, across devices.** Send your project's circuit to a QPU, then to a different kind of QPU: trapped-ion (IonQ), superconducting (IQM, Rigetti) or neutral-atom (QuEra). Explain what the difference means for your problem. The [device catalog](https://account.qbraid.com/devices) has prices and live status for every device, and the docs show how to read each device's [calibrations and connectivity](https://docs.qbraid.com/v2/sdk/user-guide/providers/calibrations).
+- **Run GPUs.**
+  - **On-demand GPU instance:** launch one from the **On-Demand** tab of your [qBraid dashboard](https://account.qbraid.com/dashboard) to train a model or simulate a bigger version of your problem ([GPUs in qBraid Lab](https://docs.qbraid.com/v2/lab/user-guide/gpus)).
+  - **GPU simulators:** send circuits to `qbraid:qbraid:sim:gpu-sv` for exact state vectors up to 35 qubits, or `qbraid:qbraid:sim:gpu-tn` for tensor networks up to 500 qubits ([GPU simulators](https://docs.qbraid.com/v2/sdk/user-guide/providers/gpu-simulators)).
+- **Use qBraid AI (encouraged).** Show what you had it do and where you stepped in.
+  - **[AI Chat](https://account.qbraid.com/chat):** compare devices for your circuit, or explain a result.
+  - **[Agent mode](https://docs.qbraid.com/v2/ai/user-guide/agent-mode):** open **Agent** in your qBraid account and attach a coding agent to your Lab instance. It writes, runs and fixes your notebook with you.
+  - **Your own AI tool:** connect Claude, Cursor or VS Code through the [MCP server](https://docs.qbraid.com/v2/ai/integrations/mcp-server) at `https://mcp.qbraid.com/mcp`, or call models with your qBraid API key through the [AI Gateway](https://docs.qbraid.com/v2/ai/integrations/ai-gateway).
+- **Build circuits visually** in the [Circuit Composer](https://docs.qbraid.com/v2/account/composer), then send them to any device.
+- **Track it in Lab.** [Quantum Devices](https://docs.qbraid.com/v2/lab/user-guide/quantum-devices) and [Quantum Jobs](https://docs.qbraid.com/v2/lab/user-guide/quantum-jobs) in qBraid Lab show device status and every job you've sent.
+- **Write once, run anywhere.** Write in Qiskit, Cirq, Braket or OpenQASM, and run on a device that expects another format. The [qBraid transpiler](https://docs.qbraid.com/v2/sdk/user-guide/transpiler) handles the conversion.
+- **Share it on Explore.** Put your project in a GitHub repo with a Launch on qBraid button, and submit it from qBraid's [Explore](https://account.qbraid.com/explore) page. Then anyone can open it in [qBraid Lab](https://docs.qbraid.com/v2/lab/user-guide/getting-started) with one click.
 
-**What doesn't count on its own:** signing up, running local code in a qBraid notebook, copying a tutorial unchanged, or a single "hello world" job unconnected to your project.
+**Have a reason for each run.** Credits spent on your project count in your favor. Two examples:
+- A run on a second device should answer a question your project has, such as how hardware noise changes your answer.
+- A GPU run should push your actual problem further.
+
+Running benchmarks just to run them doesn't count.
+
+**What doesn't count on its own:** signing up, running local code in a qBraid notebook, copying a tutorial unchanged, a single "hello world" job unconnected to your project, or benchmarks that don't connect to your project.
 
 ---
 
@@ -100,7 +113,7 @@ Any of these can be the core of a strong entry. One used well beats all of them 
 
 1. **qBraid features we used:** keep a tile for every qBraid feature you used, write a line on how, and delete the rest.
 2. **Our best qBraid moment:** one visual (a chart, a screenshot of your interactive view, or a frame from your game), what it shows, and where AI helped.
-3. **Check it (optional):** job IDs, links, and cost.
+3. **Check it (optional):** job IDs, links, and what your credits went to.
 
 ![Example slide: qBraid features we used](./images/example-1.png)
 
@@ -160,12 +173,12 @@ qpu_counts = qpu_job.result().data.get_counts()
 plot_histogram([sim_counts, qpu_counts])  # simulator vs. hardware chart
 ```
 
-More in the docs: [running on qBraid](https://docs.qbraid.com/sdk/user-guide/providers/native), [working with jobs](https://docs.qbraid.com/sdk/user-guide/providers/jobs) and [plotting results](https://docs.qbraid.com/sdk/user-guide/visualization).
+More in the docs: [running on qBraid](https://docs.qbraid.com/v2/sdk/user-guide/providers/getting-started), [working with jobs](https://docs.qbraid.com/v2/sdk/user-guide/providers/jobs) and [plotting results](https://docs.qbraid.com/v2/sdk/user-guide/visualization).
 
-**Save credits and time:**
+**Get the most from your credits:**
 
-- Get your circuit right on a simulator before you send it to hardware.
-- Hardware charges per job plus per shot, so pack as much as you can into each job and choose your shot count on purpose.
+- Get your circuit right on a simulator first, so each hardware run answers a real question.
+- Hardware charges per job plus per shot, so pack related circuits into one job and choose your shot count on purpose. Spend what you save on another device or a bigger run.
 - Hardware queues can be long, so send hardware jobs early in the event, not an hour before the deadline.
 
 ---
@@ -175,11 +188,17 @@ More in the docs: [running on qBraid](https://docs.qbraid.com/sdk/user-guide/pro
 qBraid staff watch every video after the deadline, with your slides open alongside, separately from track judging. For each one:
 
 1. **Did it clearly run on qBraid?** If we can't see qBraid doing real work on screen, the entry is out.
-2. **How creatively did you use qBraid?** We score it from 1 to 5. A creative visualization (an interactive view, an animation or a game built on your results), several features used well, comparing devices, a clever use of AI, or a clear result someone outside quantum can follow all push the score up.
+2. **How creatively did you use qBraid?** We score it from 1 to 5. These all push the score up:
+   - a creative visualization (an interactive view, an animation or a game built on your results)
+   - several qBraid features, each used for a good reason
+   - runs across devices that tell you something about your problem
+   - a GPU run that takes your problem further
+   - a clever use of AI
+   - a clear result someone outside quantum can follow
 
 We re-watch the top two and pick the winner.
 
-- **Spending more credits doesn't help.** A careful, cheap hardware run beats an expensive one.
+- **Use your credits.** Hardware, GPUs and qBraid AI all count when they serve your project. Benchmarks for their own sake don't.
 - **Using AI is encouraged.** Show what you had it do and where you checked its work.
 
 ---
@@ -189,7 +208,7 @@ We re-watch the top two and pick the winner.
 - [ ] 2 or 3 slides from the template, and the link opens for anyone
 - [ ] Your video is 3 to 5 minutes, and the link opens for anyone
 - [ ] It shows qBraid running on screen: notebook, jobs and results
-- [ ] You say which qBraid features you used, and where AI helped if you used it
+- [ ] You say which qBraid features you used and why each one mattered for your project, and where AI helped if you used it
 - [ ] The entry form is filled in, using the email on your qBraid account, before the deadline
 
 ---
@@ -199,6 +218,8 @@ We re-watch the top two and pick the winner.
 **Do we have to change our project?** No. Show how qBraid fits into what you're already building.
 
 **Does entering affect our track judging?** No. The award is judged separately, and your track result doesn't affect it.
+
+**Should we save our credits?** No. Use them on hardware, GPUs and qBraid AI. Just make sure each run does something for your project.
 
 **We only used simulators. Can we still win?** Yes. Hardware isn't required, and a creative use of the simulators counts.
 
@@ -215,8 +236,9 @@ We re-watch the top two and pick the winner.
 ## Links
 
 - [qBraid account](https://account.qbraid.com) and [device catalog](https://account.qbraid.com/devices)
-- [qBraid docs](https://docs.qbraid.com) and [getting started in qBraid Lab](https://docs.qbraid.com/lab/user-guide/getting-started)
+- [qBraid docs](https://docs.qbraid.com) and [getting started in qBraid Lab](https://docs.qbraid.com/v2/lab/user-guide/getting-started)
 - [qBraid SDK on GitHub](https://github.com/qBraid/qBraid)
 - Slides: [template (.pptx)](./template/qbraid-award-template.pptx) · [example (.pptx)](./template/qbraid-award-example.pptx) · [example (PDF)](./template/qbraid-award-example.pdf)
-- [qBraid AI](https://docs.qbraid.com/v2/ai/user-guide/overview) (AI Chat, Agent mode, MCP server) and the [qBraid CLI](https://docs.qbraid.com/v2/cli/user-guide/overview)
+- [qBraid AI](https://docs.qbraid.com/v2/ai/user-guide/overview) (AI Chat, Agent mode, MCP server, AI Gateway) and the [qBraid CLI](https://docs.qbraid.com/v2/cli/user-guide/overview)
+- [GPUs in qBraid Lab](https://docs.qbraid.com/v2/lab/user-guide/gpus) and [GPU simulators](https://docs.qbraid.com/v2/sdk/user-guide/providers/gpu-simulators)
 - Questions: ask a qBraid mentor at your event or in your event's Discord ([Intermountain](https://discord.gg/7mWPs3HGc)), or email alex@qbraid.com

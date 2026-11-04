@@ -40,7 +40,7 @@ const FEATURES = [
   { key: "ai", name: "qBraid AI", hint: "AI Chat, Agent mode, MCP server", icon: fa.FaRobot, ai: true },
   { key: "tr", name: "Transpiler", hint: "Qiskit, Cirq, Braket, OpenQASM", icon: fa.FaShuffle },
   { key: "jobs", name: "Jobs and results", hint: "Jobs page, job IDs, plots", icon: fa.FaChartColumn },
-  { key: "cli", name: "CLI and compute", hint: "qbraid CLI, GPU instances", icon: fa.FaTerminal },
+  { key: "cli", name: "GPUs and compute", hint: "GPU instances, qbraid CLI", icon: fa.FaTerminal },
   { key: "other", name: "Visuals and Explore", hint: "Agent Canvas, games, Explore", icon: fa.FaLightbulb },
 ];
 
@@ -176,9 +176,9 @@ async function buildDeck(mode) {
     { k: "links", label: "Links", lines: ex
       ? ["Screen recording (1:45): <link>", "qBraid notebook: <link>", "Repo with a Launch on qBraid button: <link>"]
       : ["[Your 3 to 5 minute video]", "[qBraid notebook, project, job or artifact]", "[Repo with a Launch on qBraid button]"] },
-    { k: "cost", label: "Cost and next", lines: ex
-      ? ["About 1,100 credits (about $11), 4% of our budget", "Batched every key bit into one circuit per run: 4 hardware jobs in total", "Next: run the alarm on Quantinuum"]
-      : ["[Credits used, roughly]", "[How you kept the cost low]", "[What you'd try next]"] },
+    { k: "cost", label: "Credits and next", lines: ex
+      ? ["About 6,000 credits (about $60): 4 hardware jobs plus GPU simulator time", "Two kinds of hardware, to see how real noise moves the alarm line", "Next: run the alarm on Quantinuum"]
+      : ["[Credits used, and on what]", "[Why each run mattered for your project]", "[What you'd run next]"] },
   ];
   const cw = (12.13 - 0.6) / 3, cy = 1.85, ch = 3.4;
   cards.forEach((c, i) => {
@@ -190,7 +190,7 @@ async function buildDeck(mode) {
       x: x + 0.3, y: cy + 1.15, w: cw - 0.6, h: ch - 1.4, fontSize: 14, color: ex ? C.text1 : C.accent6, margin: 0, valign: "top", isTextBox: true, objectName: c.label + " lines",
     });
   });
-  s.addText("Spending more credits doesn't score. A careful, cheap run beats an expensive one.", { x: 0.6, y: 5.55, w: 12.13, h: 0.35, fontSize: 12, italic: true, color: C.accent6, margin: 0, isTextBox: true, objectName: "Cost note" });
+  s.addText("Use your credits: hardware, GPUs and qBraid AI all count when they serve your project.", { x: 0.6, y: 5.55, w: 12.13, h: 0.35, fontSize: 12, italic: true, color: C.accent6, margin: 0, isTextBox: true, objectName: "Credits note" });
   s.addNotes(ex
     ? "Example. This slide is optional, but it makes it easy for judges to confirm the work ran on qBraid."
     : "Optional. Anything here helps judges confirm your work ran on qBraid. Make sure every link opens for anyone.\n\nIn your video (last 30 seconds): say what you'd try next.");
