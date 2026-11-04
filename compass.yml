@@ -1,0 +1,16 @@
+name: qbraid-award
+id: ari:cloud:compass:8526d2ba-687c-46b3-8b65-acaf550a9b39:component/141c5c30-d6a4-4eb9-b8dd-1a0c55663014/0cc262aa-c93d-48d4-ac17-40cfb45d224e
+description: 'qBraid Award: the student guide, slide template and one-line visual starter for hackathon teams'
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/qBraid/qbraid-award
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
